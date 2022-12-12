@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url("assets/achtergrond.avif");
+}
+
+nav img{
+
+    width: 57px;
+    height: 55px;
+}
+
+nav {
+    width: 228px;
+    height: 57px;
+}
