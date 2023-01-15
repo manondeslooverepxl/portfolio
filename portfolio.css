@@ -10,7 +10,7 @@
 /* navigatiebalk */
 nav {
     width: 100%;
-    margin: 5px auto;
+    margin: 1rem auto;
     display: flex;
     justify-content: space-between;
 
@@ -66,44 +66,12 @@ header h1 {
     padding-left: 20px;
     padding-right: 15px;
 }
-/*
-header {
-    display: flex;
-    flex-direction: column;
-}
-header h1 {
-    font-size: 3rem;
-    align-self: flex-end;
-    padding: 5px;
-}
-
-header img {
-    width: 100%;
-    padding: 50px;
-}
-
-div {
-    width: 100%;
-    padding: 1rem;
-}
-
-div p {
-    margin: 1rem 0;
-}
-
-div img {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem;
-}
-*/
 
 /* main-gedeelte */
 
 main {
     width: 100%;
-    margin: 10px auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
 }
@@ -133,7 +101,7 @@ main p {
 main img {
     width: 450px;
     height: 450px;
-    padding: 15px;
+    padding: 1rem;
 }
 
 .photoshop {
@@ -155,7 +123,7 @@ main img {
 }
 
 .schoolopdrachten {
-    padding: 15px;
+    padding: 1rem;
 }
 
 .schoolopdrachten h1 {
@@ -201,22 +169,157 @@ footer {
 }
 
 
-@media screen and (max-width: 1000px) {
-    main {
-        width: 100%;
-        padding: 0 1rem;
-    }
-}
-@media screen and (max-width: 750px) {
-    nav h1{
+@media only screen and (max-width: 900px) {
+    .pijltje img {
+        width: 60%;
         padding-left: 1rem;
+
     }
 
-    section#sectie1 article {
+    .logomanon img {
+        position: relative;
+        width: 60%;
+        padding-right: 1rem;
+    }
+
+    header img {
+        display: inline-block;
+        flex-direction: column;
+        margin: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header p, header h1 {
+        text-align: left;
+        padding: 1rem;
         flex-direction: column;
     }
 
-    div {
-        padding: 0;
+    main img {
+        flex-direction: column;
+    }
+    /* .textorb{
+        display: none;
+    }
+    div#header__h1_title h1{
+        font-size: 100px;
+        margin: 0;
+    }
+    section h2{
+        padding-top: 80px;
+        font-size: 70px;
+    }
+    #aboutme div img{
+        margin-top: 2rem;
+    }
+    #aboutme #aboutme__text_and_picture{
+        flex-direction: column;
+        width: 100%;
+    }
+    .wplassignments ul li a{
+        font-size: 20px;
+    }
+    .wplassignments ul li{
+        margin: 0.5rem 0;
+    }
+
+     */
+}
+@media only screen and (max-width: 620px) {
+    nav {
+        align-content: space-evenly;
+        padding: 1rem;
+    }
+    .pijltje {
+        display: inline;
+        text-align: left;
+    }
+
+    .pijltje img {
+        display: inline;
+        width: 189px;
+        height: 54px;
+        padding: 5px;
+    }
+
+    .logomanon {
+        display: inline;
+    }
+
+    .logomanon img {
+        display: inline-block;
+        width: 126px;
+        height: 54px;
+        padding: 10px;
+    }
+    header img {
+        flex: 60%;
+    }
+    main {
+        flex-direction: column;
+    }
+   /* nav#nav__iphone{
+        display: block;
+    }
+    nav#nav__web_ipad{
+        display: none;
+    }
+    section#home{
+        background-image: url("assets/.png");
+        padding-top: 1rem;
+    }
+    #header__h1_title{
+        flex-direction: column;
+        align-content: flex-start;
+        line-height: 130px;
+    }
+    #home #header__h1_title h1{
+        font-size: 130px;
+    }
+    #header__h1_title h1:nth-child(2){
+        text-align: right;
+    }
+    #header__extrainfo{
+        padding-top: 1rem;
+    }
+    #home #header__socialslinks{
+        width: 80%;
+    }
+    section h2{
+        padding-top: 20px;
+    }
+    #aboutme #aboutme__text_and_picture p{
+        font-size: 20px;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+    section#projects{
+        padding-bottom: 4rem;
+    }
+    section#projects h2{
+        text-align: left;
+    }
+    .projectcolumn {
+        flex: 100%;
+        max-width: 100%;
+    }
+    footer ul{
+        width: 80%;
+        justify-content: space-between;
+    }
+    footer p a{
+        font-size: 24px;
+    }
+
+    */
+}
+@media only screen and (max-width: 400px) {
+    #home #header__h1_title h1{
+        font-size: 100px;
+    }
+    #aboutme__text_and_picture img{
+        width: 200px;
     }
 }
+
