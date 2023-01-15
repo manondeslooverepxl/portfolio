@@ -4,18 +4,69 @@
     font-family: 'Source Serif Pro','Lato', serif , sans-serif;
     box-sizing: border-box;
     background-image: url("assets/achtergrond.avif");
+    background-size: cover;
 }
 
-nav img{
-    width: 57px;
-    height: 55px;
-}
-
+/* navigatiebalk */
 nav {
-    width: 228px;
-    height: 57px;
+    width: 100%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+
 }
 
+.pijltje {
+    display: inline;
+    text-align: left;
+}
+
+.pijltje img {
+    display: inline;
+    width: 189px;
+    height: 54px;
+    padding: 10px;
+}
+
+.logomanon {
+    display: inline;
+}
+
+.logomanon img {
+    display: inline-block;
+    width: 126px;
+    height: 54px;
+    padding: 10px;
+}
+
+/* header */
+
+header img {
+    width: 621px;
+    height: 633px;
+    padding: 50px;
+    justify-content: space-around;
+}
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header p {
+    color: #382E13;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+header h1 {
+    color: #382E13;
+    font-size: 50px;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+/*
 header {
     display: flex;
     flex-direction: column;
@@ -26,8 +77,9 @@ header h1 {
     padding: 5px;
 }
 
-header img{
-    width: 200px;
+header img {
+    width: 100%;
+    padding: 50px;
 }
 
 div {
@@ -39,27 +91,104 @@ div p {
     margin: 1rem 0;
 }
 
+div img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+*/
+
+/* main-gedeelte */
 
 main {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
 }
 
-section#sectie1 article {
+main h1 {
+    color: #382E13;
+    font-size: 50px;
+    padding-left: 30px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+
+}
+
+main h2 {
+    color: #382E13;
+    font-size: 40px;
+    padding-left: 30px;
+}
+
+main p {
+    color: #382E13;
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
+
+main img {
+    width: 450px;
+    height: 450px;
+    padding: 15px;
+}
+
+.photoshop {
     display: flex;
+    padding: 15px;
+}
+
+.illustrator {
+    display: flex;
+    padding: 15px;
+}
+
+.werkjes {
+    padding: 5px;
+}
+
+#sectie2 {
     flex-direction: row;
-    margin-top: 2rem;
 }
 
-section#sectie2 {
-    width: 100%;
-    margin: 2rem 0;
+.schoolopdrachten {
+    padding: 15px;
 }
 
-article img {
-    display: flex;
-    width: 100%;
-    margin-top: 1rem;
+.schoolopdrachten h1 {
+    font-size: 40px;
+    padding: 5px 30px;
+}
+
+.schoolopdrachten h2 {
+    font-size: 30px;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+
+.schoolopdrachten p {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.schoolopdrachten ul li {
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+    list-style: inside;
+}
+
+main a {
+    color: #d4af34;
+}
+
+main a:hover {
+    font-size: 40px;
+    text-decoration: underline dotted;
 }
 
 footer {
@@ -68,18 +197,22 @@ footer {
     text-align: right;
     display: flex;
     justify-content: space-around;
+    font-size: 25px;
 }
 
+
+@media screen and (max-width: 1000px) {
+    main {
+        width: 100%;
+        padding: 0 1rem;
+    }
+}
 @media screen and (max-width: 750px) {
     nav h1{
         padding-left: 1rem;
     }
 
     section#sectie1 article {
-        flex-direction: column;
-    }
-
-    section#sectie1 article#fiets {
         flex-direction: column;
     }
 
