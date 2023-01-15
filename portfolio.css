@@ -1,12 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Source Serif Pro','Lato', serif , sans-serif;
     box-sizing: border-box;
     background-image: url("assets/achtergrond.avif");
 }
 
 nav img{
-
     width: 57px;
     height: 55px;
 }
@@ -14,4 +14,81 @@ nav img{
 nav {
     width: 228px;
     height: 57px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+header h1 {
+    font-variant:'Source Serif Pro';
+    font-size: 3rem;
+    align-self: flex-end;
+    padding: 5px;
+}
+
+header img{
+    width: 200px;
+}
+
+div {
+    width: 100%;
+    padding: 1rem;
+}
+
+div p {
+    margin: 1rem 0;
+}
+
+
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main h1 h2 {
+    font-variant: 'Source Serif Pro';
+}
+
+section#sectie1 article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+section#sectie2 {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+article img {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+footer {
+    width: 100%;
+    color: #d4af34;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 750px) {
+    nav h1{
+        padding-left: 1rem;
+    }
+
+    section#sectie1 article {
+        flex-direction: column;
+    }
+
+    section#sectie1 article#fiets {
+        flex-direction: column;
+    }
+
+    div {
+        padding: 0;
+    }
 }
